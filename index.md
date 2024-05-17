@@ -1,7 +1,5 @@
 ---
-layout: default
-title: About
+food: Pizza
 ---
-# About page
 
-This page tells you a little bit about me.
+<h1>{{ page.food }}</h1>
