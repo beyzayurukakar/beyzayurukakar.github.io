@@ -16,10 +16,16 @@
     text-align: center; /* Center-align text */
     padding: 14px 20px; /* Padding around the links */
     text-decoration: none; /* Remove default underline */
+    font-family: Helvetica, sans-serif;
 }
 
 /* Change color on hover */
 .navbar a:hover {
-    background-color: #ddd; /* Background color on hover */
+    background-color: #aaa; /* Background color on hover */
+    color: black; /* Text color on hover */
+}
+
+.current {
+    background-color: #fff; /* Background color on hover */
     color: black; /* Text color on hover */
 }
