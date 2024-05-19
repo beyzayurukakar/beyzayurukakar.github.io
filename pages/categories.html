@@ -1,0 +1,12 @@
+---
+title: categories
+---
+
+<ul class="blog-list">
+  {% for category in site.categories %}
+  <li class="blog-list-item">
+    <h2 class="blog-list-title"><a href="{{ category.url }}">{{ category.name }}</a></h2>
+    <p class="blog-list-excerpt">{{ category.content | markdownify }}</p>
+  </li>
+  {% endfor %}
+</ul>

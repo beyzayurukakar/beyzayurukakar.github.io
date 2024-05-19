@@ -1,13 +1,13 @@
 collections:
-  topics:
+  categories:
     output: true
 
 defaults:
   - scope:
       path: ""
-      type: "topics"
+      type: "categories"
     values:
-      layout: "topic"
+      layout: "category"
   - scope:
       path: ""
       type: "posts"

@@ -1,0 +1,19 @@
+---
+title: Blog
+---
+
+<ul class="blog-list">
+  {% for post in site.posts %}
+  <li class="blog-list-item">
+    <h2 class="blog-list-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+    {% assign category = site.categories | where: 'short_name', page.category | first %}
+    {% if category %}
+    <p class="blog-list-category">Category: <a href="{{ category.url }}">{{ category.name }}</a></p>
+    {% endif %}
+
+    <p class="blog-list-date">{{ post.date | date_to_string }}</p>
+    <p class="blog-list-excerpt">{{ post.excerpt }}</p>
+  </li>
+  {% endfor %}
+</ul>
